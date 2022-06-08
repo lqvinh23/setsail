@@ -1,0 +1,17 @@
+{
+  "name": "setsail",
+  "version": "1.0.0",
+  "description": "Travel agent website",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Le Quang Vinh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "core-js": "^3.22.3"
+  }
+}

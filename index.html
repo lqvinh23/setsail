@@ -1,0 +1,2210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetSail - Travel Agency Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Top bar -->
+      <div class="top-bar">
+        <div class="top-bar__contact">
+          <ul class="top-bar__contact-list">
+            <li class="top-bar__contact-item">
+              <a href="mailto:setsail@qode.com" class="top-bar__contact-link">
+                <i class="top-bar__contact-icon far fa-envelope"></i>
+                setsail@qode.com
+              </a>
+            </li>
+            <li class="top-bar__contact-item">
+              <a href="tel:1 562 867 5309" class="top-bar__contact-link">
+                <i class="top-bar__contact-icon fas fa-phone-alt"></i>
+                1 562 867 5309
+              </a>
+            </li>
+            <li class="top-bar__contact-item">
+              <a href="#" class="top-bar__contact-link">
+                <i class="top-bar__contact-icon fas fa-map-marker-alt"></i>
+                Broadway & Morris St, New York
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="top-bar__connect">
+          <div class="top-bar__socials">
+            <ul class="top-bar__social-list">
+              <li class="top-bar__social-item">
+                <a href="#" class="top-bar__social-link">
+                  <i class="ti-twitter-alt"></i>
+                </a>
+              </li>
+              <li class="top-bar__social-item">
+                <a href="#" class="top-bar__social-link">
+                  <i class="ti-pinterest"></i>
+                </a>
+              </li>
+              <li class="top-bar__social-item">
+                <a href="#" class="top-bar__social-link">
+                  <i class="ti-facebook"></i>
+                </a>
+              </li>
+              <li class="top-bar__social-item">
+                <a href="#" class="top-bar__social-link">
+                  <i class="ti-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__languages">
+            <a href="#" class="top-bar__languages-link">
+              English
+              <i class="top-bar__languages-icon fas fa-chevron-down"></i>
+            </a>
+            <ul class="top-bar__language-list">
+              <li class="top-bar__language-item">
+                <a href="#" class="top-bar__language-link">
+                  <span class="top-bar__language">French</span>
+                </a>
+              </li>
+              <li class="top-bar__language-item">
+                <a href="#" class="top-bar__language-link">
+                  <span class="top-bar__language">German</span>
+                </a>
+              </li>
+              <li class="top-bar__language-item">
+                <a href="#" class="top-bar__language-link">
+                  <span class="top-bar__language">Italian</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="top-bar__user">
+            <i class="top-bar__user-icon far fa-user-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="header">
+        <!-- on Tablet -->
+        <label
+          for="header__nav-tablet-checkbox"
+          class="header__nav-tablet-icon"
+        >
+          <i class="ti-menu"></i>
+        </label>
+        <input
+          type="checkbox"
+          hidden
+          id="header__nav-tablet-checkbox"
+          class="header__nav-tablet-checked"
+        />
+        <div class="header__logo-tablet">
+          <a href="#" class="header__logo-tablet-link">
+            <img
+              class="header__logo-tablet-img"
+              src="./assets/img/logo-white.png"
+              alt="logo setsail"
+            />
+          </a>
+        </div>
+        <button class="header__user">
+          <i class="header__user-icon far fa-user-circle"></i>
+        </button>
+
+        <!-- on PC -->
+        <div class="header__logo hide-on-tablet hide-on-mobile">
+          <a href="#" class="header__logo-link">
+            <img
+              class="header__logo-img"
+              src="./assets/img/logo.png"
+              alt="logo setsail"
+            />
+          </a>
+        </div>
+        <ul class="header__nav">
+          <li class="header__nav-item header__nav-item--active">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Home</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li
+                class="header__nav-dropdown-item header__nav-dropdown-item--active"
+              >
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Travel Agency</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Winter Holidays</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Exotic Destinations</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Summer Holidays</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">City Tours</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >New Year Trips</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Destinations Carousel</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Wine Tours</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Vacation Showcase</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Landing</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Pages</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">About Us</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >What We Offer</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Our Team</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Get In Touch</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Contact Us</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">FAQ Page</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Coming Soon</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Error Page</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Destinations</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Destination List</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Destination Slider</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Destination Item</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Tours</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Standard List</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Gallery List</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Split List</span>
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Tour Item</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Blog</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Blog Masonry</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link arrow-right">
+                  <span class="header__nav-dropdown-item-text"
+                    >Blog Standard</span
+                  >
+                  <i class="ti-angle-right"></i>
+                </a>
+                <ul class="nav-dropdown__sub-list">
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Right Sidebar</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Left Sidebar</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text"
+                        >Without Sidebar</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Post Types</span>
+                  <i class="ti-angle-right"></i>
+                </a>
+                <ul class="nav-dropdown__sub-list">
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Standard</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Gallery</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Link</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Quote</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Video</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Audio</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">No Sidebar</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Shop</span>
+            </a>
+            <ul class="header__nav-dropdown">
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Product List</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Product Single</span
+                  >
+                </a>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text"
+                    >Shop Layouts</span
+                  >
+                  <i class="ti-angle-right"></i>
+                </a>
+                <ul class="nav-dropdown__sub-list">
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Three Columns</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Four Columns</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Full Width</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-dropdown-item">
+                <a href="#" class="header__nav-dropdown-item-link">
+                  <span class="header__nav-dropdown-item-text">Shop Pages</span>
+                  <i class="ti-angle-right"></i>
+                </a>
+                <ul class="nav-dropdown__sub-list">
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">My Account</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Cart</span>
+                    </a>
+                  </li>
+                  <li class="nav-dropdown__sub-item">
+                    <a href="#" class="nav-dropdown__sub-link">
+                      <span class="nav-dropdown__sub-text">Checkout</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-item-link">
+              <span class="header__nav-item-text">Elements</span>
+            </a>
+            <div class="elements-menu-wrap">
+              <ul class="elements-menu">
+                <li class="elements-menu__section">
+                  <a href="#" class="elements-menu__heading">
+                    <span class="elements-menu__heading-text">Featured</span>
+                  </a>
+                  <ul class="elements-menu__list">
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Tour List</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Tour Carousel</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Tours Filter</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Destination With Tours</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Destination List</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Destination Fullscreen Slider</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Fullscreen Section</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Reviews Carousel</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="elements-menu__section">
+                  <a href="#" class="elements-menu__heading">
+                    <span class="elements-menu__heading-text"
+                      >Presentation</span
+                    >
+                  </a>
+                  <ul class="elements-menu__list">
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Team</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Blog List</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Shop List</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Testimonials</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Banner</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Clients</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Parallux Section</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Video Button</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="elements-menu__section">
+                  <a href="#" class="elements-menu__heading">
+                    <span class="elements-menu__heading-text">Classic</span>
+                  </a>
+                  <ul class="elements-menu__list">
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Accordions</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Tabs</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Buttons</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Google Maps</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Contact Form</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Progress Bar</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Countdown</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Counters</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Call To Action</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="elements-menu__section">
+                  <a href="#" class="elements-menu__heading">
+                    <span class="elements-menu__heading-text">Typography</span>
+                  </a>
+                  <ul class="elements-menu__list">
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Headings</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Columns</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Section Title</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Blockquote</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Dropcaps</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Highlights</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Icon with text</span
+                        >
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text">Separators</span>
+                      </a>
+                    </li>
+                    <li class="elements-menu__item">
+                      <a href="#" class="elements-menu__item-link">
+                        <span class="elements-menu__item-text"
+                          >Custom Font</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="header__icon hide-on-tablet hide-on-mobile">
+          <div class="header__icon-btn">
+            <a href="#" class="header__icon-cart">
+              <i class="fas fa-shopping-basket"></i>
+              <div class="cart-box">
+                <span class="cart-box__info">No products in the cart.</span>
+              </div>
+            </a>
+            <button class="header__icon-search">
+              <i class="fas fa-search"></i>
+            </button>
+            <button class="header__icon-menu">
+              <i class="ti-menu"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="text-content">
+          <p class="text-slogan">Let's go now</p>
+          <h2 class="text-heading">Explore and travel.</h2>
+          <p class="text-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque rem
+            beatae blanditiis nostrum explicabo! Itaque iure possimus suscipit
+            voluptatibus
+          </p>
+        </div>
+        <!-- Search box -->
+        <div class="search-box-wrap">
+          <div class="search-box">
+            <div class="search-box__input">
+              <div class="search-box__item">
+                <i class="search-box__item-icon fas fa-compass"></i>
+                <input
+                  class="search-box__item-input"
+                  type="text"
+                  placeholder="Where to?"
+                />
+              </div>
+              <div class="search-box__item">
+                <i class="search-box__item-icon far fa-calendar"></i>
+                <input
+                  type="month"
+                  class="search-box__item-input"
+                  placeholder="Month"
+                />
+              </div>
+              <div class="search-box__item">
+                <i class="search-box__item-icon fas fa-thumbtack"></i>
+                <input
+                  type="text"
+                  class="search-box__item-input"
+                  placeholder="Travel Type"
+                />
+              </div>
+            </div>
+            <button class="search-box__btn">Find now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__heading">
+          <p class="gallery__heading-first">Choose Your</p>
+          <h2>Perfect Holiday</h2>
+          <p class="gallery__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis the
+          </p>
+        </div>
+        <div class="gallery__collection">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place gallery__place--circle">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img gallery__place-img--circle"
+                      src="./assets/img/spain.jpg"
+                      alt="Spain"
+                    />
+                    <h4 class="gallery__place-name--circle">Spain</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/tarragona.jpg"
+                      alt="Tarragona"
+                    />
+                    <h4 class="gallery__place-name">Tarragona</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">5.0 Good</span>
+                      </div>
+                      <span class="gallery__place-cost">$1740</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/madrid.jpg"
+                      alt="Madrid"
+                    />
+                    <h4 class="gallery__place-name">Madrid</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">7.0 Superb</span>
+                      </div>
+                      <span class="gallery__place-cost">$1100</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/barcelona.jpg"
+                      alt="Tarragona"
+                    />
+                    <h4 class="gallery__place-name">Barcelona</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">5.3 Good</span>
+                      </div>
+                      <span class="gallery__place-cost">$840</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/kaohsiung.jpg"
+                      alt="Kaohsiung"
+                    />
+                    <h4 class="gallery__place-name">Kaohsiung</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">8.0 Superb</span>
+                      </div>
+                      <span class="gallery__place-cost">$963</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/taipei.jpg"
+                      alt="Taipei"
+                    />
+                    <h4 class="gallery__place-name">Taipei</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">5.0 Good</span>
+                      </div>
+                      <span class="gallery__place-cost">$2130</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/tainan.jpg"
+                      alt="Tainan"
+                    />
+                    <h4 class="gallery__place-name">Tainan</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">7.3 Superb</span>
+                      </div>
+                      <span class="gallery__place-cost">$999</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place gallery__place--circle">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img gallery__place-img--circle"
+                      src="./assets/img/taiwan.jpg"
+                      alt="Taiwan"
+                    />
+                    <h4 class="gallery__place-name--circle">Taiwan</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place gallery__place--circle">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img gallery__place-img--circle"
+                      src="./assets/img/bali.jpg"
+                      alt="Bali"
+                    />
+                    <h4 class="gallery__place-name--circle">Bali</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/ubud.jpg"
+                      alt="Ubud"
+                    />
+                    <h4 class="gallery__place-name">Ubud</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">6.0 Good</span>
+                      </div>
+                      <span class="gallery__place-cost">$888</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/seminyak.jpg"
+                      alt="Seminyak"
+                    />
+                    <h4 class="gallery__place-name">Seminyak</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">9.0 Superb</span>
+                      </div>
+                      <span class="gallery__place-cost">$966</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="gallery__place">
+                  <a href="#" class="gallery__place-link">
+                    <img
+                      class="gallery__place-img"
+                      src="./assets/img/denpasar.jpg"
+                      alt="Denpasar"
+                    />
+                    <h4 class="gallery__place-name">Denpasar</h4>
+                    <div class="gallery__place-info">
+                      <div class="gallery__place-rate">
+                        <i class="gallery__place-rate-icon far fa-star"></i>
+                        <span class="gallery__place-rated">6.7 Good</span>
+                      </div>
+                      <span class="gallery__place-cost">$999</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__footer">
+          <img
+            src="./assets/img/greeting.png"
+            alt=""
+            class="gallery__footer-img"
+          />
+        </div>
+      </div>
+
+      <div class="utilities">
+        <div class="utilities__background">
+          <div class="utilities__heading">
+            <p class="utilities__heading-first">Go & Discover</p>
+            <h2>Breathtaking Cities</h2>
+            <p class="utilities__heading-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+              commodo ligula eget dolor. Aenean massa. Cum sociis the
+            </p>
+          </div>
+          <a href="https://vimeo.com/71319358" class="utilities__video">
+            <img
+              src="./assets/img/video-img.jpg"
+              alt=""
+              class="utilities__video-img"
+            />
+            <div class="utilities__video-btn">
+              <img
+                src="./assets/img/play-button.png"
+                alt=""
+                class="utilities__video-btn-img"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="utilities__list">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-3 m-12 c-12">
+                <div class="utilities__list-item">
+                  <img
+                    src="./assets/img/restaurant.png"
+                    alt=""
+                    class="utilities__list-img"
+                  />
+                  <div class="utilities__list-item-info">
+                    <h4 class="utilities__list-item-name">Restaurants</h4>
+                    <p class="utilities__list-item-description">
+                      Aenean commodo ligula eget dolor. Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-12 c-12">
+                <div class="utilities__list-item">
+                  <img
+                    src="./assets/img/sightseeing.png"
+                    alt=""
+                    class="utilities__list-img"
+                  />
+                  <div class="utilities__list-item-info">
+                    <h4 class="utilities__list-item-name">Sightseeing</h4>
+                    <p class="utilities__list-item-description">
+                      Aenean commodo ligula eget dolor. Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-12 c-12">
+                <div class="utilities__list-item">
+                  <img
+                    src="./assets/img/shop.png"
+                    alt=""
+                    class="utilities__list-img"
+                  />
+                  <div class="utilities__list-item-info">
+                    <h4 class="utilities__list-item-name">Shops & Boutiques</h4>
+                    <p class="utilities__list-item-description">
+                      Aenean commodo ligula eget dolor. Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-12 c-12">
+                <div class="utilities__list-item">
+                  <img
+                    src="./assets/img/where.png"
+                    alt=""
+                    class="utilities__list-img"
+                  />
+                  <div class="utilities__list-item-info">
+                    <h4 class="utilities__list-item-name">Where to Stay</h4>
+                    <p class="utilities__list-item-description">
+                      Aenean commodo ligula eget dolor. Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour">
+        <div class="tour__heading">
+          <p class="tour__heading-first">Plan The</p>
+          <h2>Perfect Holiday</h2>
+          <p class="tour__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis the
+          </p>
+        </div>
+        <div class="tour__slider">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/corfu.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Corfu
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$966</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/vatican.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Vatican
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$860</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/rome.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Rome
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$2300</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/milan.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Milan
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$1230</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/Seville.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Seville
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$1500</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/corfu.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Corfu
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$966</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/vatican.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Vatican
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$860</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/rome.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Rome
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$2300</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/milan.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Milan
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$1230</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/Seville.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Seville
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$1500</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="tour__slider-item">
+                  <a href="#" class="tour__slider-item-link">
+                    <img
+                      src="./assets/img/Seville.jpg"
+                      alt=""
+                      class="tour__slider-item-img"
+                    />
+                  </a>
+                  <div class="tour__slider-item-ribbon">
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="far fa-calendar"></i>
+                      1
+                    </div>
+                    <div class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-user"></i>
+                      13+
+                    </div>
+                    <a href="#" class="tour__slider-item-ribbon-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="tour__slider-item-ribbon-item-area">
+                        Europe
+                      </span>
+                    </a>
+                  </div>
+                  <div class="tour__slider-item-info">
+                    <a href="#" class="tour__slider-item-info-heading">
+                      Seville
+                    </a>
+                    <p class="tour__slider-item-info-description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing el...
+                    </p>
+                    <span class="tour__slider-item-info-cost">$1500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tour__slider-paginate">
+            <i class="tour__slider-paginate-icon--active fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="sharing">
+        <i class="sharing__icon ti-angle-left"></i>
+        <div class="sharing__content">
+          <img
+            src="./assets/img/testimonial-1.png"
+            alt=""
+            class="sharing__content-img"
+          />
+          <p class="sharing__content-text">
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis"
+          </p>
+          <span class="sharing__content-name"> Marianna Loreto </span>
+        </div>
+        <i class="sharing__icon ti-angle-right"></i>
+      </div>
+
+      <div class="sales">
+        <div class="sales__heading">
+          <p class="sales__heading-first">The Unforgettable</p>
+          <h2>Mediterranean</h2>
+          <p class="sales__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis
+          </p>
+        </div>
+        <div class="sales__list">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-4 m-4 c-12">
+                <div class="sales__list-wrap">
+                  <a href="#" class="sales__list-item">
+                    <img
+                      src="./assets/img/valencia.jpg"
+                      alt=""
+                      class="sales__list-item-img"
+                    />
+                    <div class="sales__list-item-tag">50% Off</div>
+                    <div class="sales__list-item-info">
+                      <h4 class="sales__list-item-name">Valencia</h4>
+                      <span class="sales__list-item-cost">$1990</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-12">
+                <div class="sales__list-wrap">
+                  <a href="#" class="sales__list-item">
+                    <img
+                      src="./assets/img/varadero.jpg"
+                      alt=""
+                      class="sales__list-item-img"
+                    />
+                    <div class="sales__list-item-tag">Special Offer</div>
+                    <div class="sales__list-item-info">
+                      <h4 class="sales__list-item-name">Varadero</h4>
+                      <span class="sales__list-item-cost">$2300</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-12">
+                <div class="sales__list-wrap">
+                  <a href="#" class="sales__list-item">
+                    <img
+                      src="./assets/img/italy.jpg"
+                      alt=""
+                      class="sales__list-item-img"
+                    />
+                    <div class="sales__list-item-info">
+                      <h4 class="sales__list-item-name">Italy Tour</h4>
+                      <span class="sales__list-item-cost">$2560</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review__heading">
+          <p class="review__heading-first">Read The Top</p>
+          <h2>Travel Reviews</h2>
+          <p class="review__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis the
+          </p>
+        </div>
+        <div class="review__list">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-4 m-4 c-0">
+                <div class="review__item">
+                  <img
+                    src="./assets/img/testimonial-1.png"
+                    alt=""
+                    class="review__item-img"
+                  />
+                  <div class="review__item-info">
+                    <a href="#" class="review__item-info-place-link">
+                      <h2 class="review__item-info-place">Holland Canals</h2>
+                    </a>
+                    <ul class="review__item-info-rate">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <p class="review__item-info-text">
+                      Sa etor aviues lmpedlt tes, vof ef nihc agem qupaios. Ai
+                      apvy
+                    </p>
+                    <span class="review__item-info-name">Ema Cooper</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-12">
+                <div class="review__item">
+                  <img
+                    src="./assets/img/taipei-user.png"
+                    alt=""
+                    class="review__item-img"
+                  />
+                  <div class="review__item-info">
+                    <a href="#" class="review__item-info-place-link">
+                      <h2 class="review__item-info-place">Taipei</h2>
+                    </a>
+                    <ul class="review__item-info-rate">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <p class="review__item-info-text">
+                      Pe utor aviuas lwpadit tas, vut et nihc egam yubulas. Si
+                      euvy
+                    </p>
+                    <span class="review__item-info-name">Susan Day</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-0">
+                <div class="review__item">
+                  <img
+                    src="./assets/img/user-img-3.png"
+                    alt=""
+                    class="review__item-img"
+                  />
+                  <div class="review__item-info">
+                    <a href="#" class="review__item-info-place-link">
+                      <h2 class="review__item-info-place">Kaohsiung</h2>
+                    </a>
+                    <ul class="review__item-info-rate">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <p class="review__item-info-text">
+                      Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei
+                      euvy
+                    </p>
+                    <span class="review__item-info-name">Roger Brooks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review__paginate">
+              <i class="review__paginate-icon--active fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blogs">
+        <div class="grid">
+          <div class="row">
+            <div class="col l-8 m-12 c-12">
+              <div class="blogs__heading">
+                <h2>From Our Blog</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene
+                  an commodo ligula eget dolor. Aenean massa. Cum sociis the
+                </p>
+              </div>
+              <div class="blogs__content">
+                <div class="blog">
+                  <a href="#" class="blog__img-link">
+                    <img
+                      src="./assets/img/blog-img-1.jpg"
+                      alt=""
+                      class="blog__img"
+                    />
+                  </a>
+                  <div class="blog__content">
+                    <a href="#" class="blog__content-heading">Amazing Tour</a>
+                    <p class="blog__content-text">
+                      Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut
+                      audiam invenire iracundia vim. An eam dico similique, ut
+                      sint posse sit,
+                    </p>
+                    <span class="blog__content-info">
+                      <a href="#" class="blog__content-info-day"
+                        >September 11, 2016</a
+                      >
+                      <a href="#" class="blog__content-info-cmt">
+                        <i class="far fa-comment"></i>
+                        1 Comment
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="blog">
+                  <a href="#" class="blog__img-link">
+                    <img
+                      src="./assets/img/blog-img-2.jpg"
+                      alt=""
+                      class="blog__img"
+                    />
+                  </a>
+                  <div class="blog__content">
+                    <a href="#" class="blog__content-heading">Your Vacation</a>
+                    <p class="blog__content-text">
+                      Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut
+                      audiam invenire iracundia vim. An eam dico similique, ut
+                      sint posse sit,
+                    </p>
+                    <span class="blog__content-info">
+                      <a href="#" class="blog__content-info-day"
+                        >September 11, 2016</a
+                      >
+                      <a href="#" class="blog__content-info-cmt">
+                        <i class="far fa-comment"></i>
+                        1 Comment
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-12 c-12">
+              <a href="#" class="blogs__img-link">
+                <img
+                  src="./assets/img/blogs-img.jpg"
+                  alt=""
+                  class="blogs__img"
+                />
+                <div class="blogs__img-ribbon">
+                  <span class="blogs__img-ribbon-addr">travel.com</span>
+                  <h2 class="blogs__img-ribbon-text">Sale up to 70%</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="destination">
+        <div class="destination__heading">
+          <p class="destination__heading-first">Choose Your</p>
+          <h2>Destination</h2>
+          <p class="destination__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis
+          </p>
+        </div>
+        <div class="destination__list">
+          <div class="grid">
+            <div class="row">
+              <div class="col l-4 m-4 c-12">
+                <div class="destination__item">
+                  <a href="#" class="destination__item-link">
+                    <div class="destination__item-img-wrap">
+                      <img
+                        src="./assets/img/netherland.jpg"
+                        alt=""
+                        class="destination__item-img"
+                      />
+                    </div>
+                    <span class="destination__item-name">Netherlands</span>
+                    <i class="fas fa-star"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-12">
+                <div class="destination__item">
+                  <a href="#" class="destination__item-link">
+                    <div class="destination__item-img-wrap">
+                      <img
+                        src="./assets/img/greece.jpg"
+                        alt=""
+                        class="destination__item-img"
+                      />
+                    </div>
+                    <span class="destination__item-name">Greece</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col l-4 m-4 c-12">
+                <div class="destination__item">
+                  <a href="#" class="destination__item-link">
+                    <div class="destination__item-img-wrap">
+                      <img
+                        src="./assets/img/italia.jpg"
+                        alt=""
+                        class="destination__item-img"
+                      />
+                    </div>
+                    <span class="destination__item-name">Italy</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stamp">
+        <div class="stamp__heading">
+          <p class="stamp__heading-first">Get Ready</p>
+          <h2>Pack Up And Go</h2>
+          <p class="stamp__heading-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+            commodo ligula eget dolor. Aenean massa. Cum sociis the
+          </p>
+        </div>
+        <div class="stamp__collection">
+          <i class="ti-angle-left"></i>
+          <div class="stamp__list">
+            <div class="grid">
+              <div class="row">
+                <div class="col l-2-4 m-4-s m-6 c-0">
+                  <div class="stamp__item">
+                    <a href="#" class="stamp__item-link">
+                      <img
+                        src="./assets/img/japan.jpg"
+                        alt=""
+                        class="stamp__item-img"
+                      />
+                      <div class="stamp__item-info">
+                        <h5 class="stamp__item-info-heading">Japan</h5>
+                        <p class="stamp__item-info-text">
+                          Lorem ipsum dolor sit amet, consectetuer
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4-s m-6 c-0">
+                  <div class="stamp__item">
+                    <a href="#" class="stamp__item-link">
+                      <img
+                        src="./assets/img/china.jpg"
+                        alt=""
+                        class="stamp__item-img"
+                      />
+                      <div class="stamp__item-info">
+                        <h5 class="stamp__item-info-heading">China</h5>
+                        <p class="stamp__item-info-text">
+                          Lorem ipsum dolor sit amet, consectetuer
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4-s m-0 c-12">
+                  <div class="stamp__item">
+                    <a href="#" class="stamp__item-link">
+                      <img
+                        src="./assets/img/usa.jpg"
+                        alt=""
+                        class="stamp__item-img"
+                      />
+                      <div class="stamp__item-info">
+                        <h5 class="stamp__item-info-heading">USA</h5>
+                        <p class="stamp__item-info-text">
+                          Lorem ipsum dolor sit amet, consectetuer
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-0-s m-0 c-0">
+                  <div class="stamp__item">
+                    <a href="#" class="stamp__item-link">
+                      <img
+                        src="./assets/img/india.jpg"
+                        alt=""
+                        class="stamp__item-img"
+                      />
+                      <div class="stamp__item-info">
+                        <h5 class="stamp__item-info-heading">India</h5>
+                        <p class="stamp__item-info-text">
+                          Lorem ipsum dolor sit amet, consectetuer
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-0-s m-0 c-0">
+                  <div class="stamp__item">
+                    <a href="#" class="stamp__item-link">
+                      <img
+                        src="./assets/img/england.jpg"
+                        alt=""
+                        class="stamp__item-img"
+                      />
+                      <div class="stamp__item-info">
+                        <h5 class="stamp__item-info-heading">England</h5>
+                        <p class="stamp__item-info-text">
+                          Lorem ipsum dolor sit amet, consectetuer
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="ti-angle-right"></i>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <div class="footer__bar-wrap">
+          <h1 class="footer__bar-text">
+            Subscribe Now and Quench Your Wanderlust!
+          </h1>
+          <a href="#" class="footer__bar-link">
+            <button class="footer__bar-btn">Join now</button>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="footer__box">
+            <div class="row">
+              <div class="col l-3 m-6 c-12">
+                <div class="footer__box-contact">
+                  <a href="#" class="footer__box-contact-img-link">
+                    <img
+                      src="./assets/img/logo.png"
+                      alt=""
+                      class="footer__box-contact-img"
+                    />
+                  </a>
+                  <p class="footer__box-contact-text">
+                    Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                  </p>
+                  <div class="footer__box-contact-wrap">
+                    <ul class="footer__box-contact-list">
+                      <li class="footer__box-contact-item">
+                        <a
+                          href="mailto:setsail@qode.com"
+                          class="footer__box-contact-link"
+                        >
+                          <i
+                            class="footer__box-contact-icon far fa-envelope"
+                          ></i>
+                          setsail@qode.com
+                        </a>
+                      </li>
+                      <li class="footer__box-contact-item">
+                        <a
+                          href="tel:1 562 867 5309"
+                          class="footer__box-contact-link"
+                        >
+                          <i
+                            class="footer__box-contact-icon fas fa-phone-alt"
+                          ></i>
+                          1 562 867 5309
+                        </a>
+                      </li>
+                      <li class="footer__box-contact-item">
+                        <a href="#" class="footer__box-contact-link">
+                          <i
+                            class="footer__box-contact-icon fas fa-map-marker-alt"
+                          ></i>
+                          Broadway & Morris St, New York
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="footer__box-posts">
+                  <h2 class="footer__box-posts-heading">Our Recent Posts</h2>
+                  <div class="footer__box-posts-item">
+                    <a href="#" class="footer__box-posts-item-name"
+                      >Visit Thailand, Bali And China</a
+                    >
+                    <a href="#" class="footer__box-posts-item-day"
+                      >September 7, 2016</a
+                    >
+                  </div>
+                  <div class="footer__box-posts-item">
+                    <a href="#" class="footer__box-posts-item-name"
+                      >The Sound Of Our Jungle</a
+                    >
+                    <a href="#" class="footer__box-posts-item-day"
+                      >September 7, 2016</a
+                    >
+                  </div>
+                  <div class="footer__box-posts-item">
+                    <a href="#" class="footer__box-posts-item-name"
+                      >New Year, New Resolutions!</a
+                    >
+                    <a href="#" class="footer__box-posts-item-day"
+                      >September 7, 2016</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="footer__box-sub">
+                  <h2 class="footer__box-sub-heading">
+                    Subscribe to our Newsletter
+                  </h2>
+                  <p class="footer__box-sub-text">
+                    Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                  </p>
+                  <div class="footer__box-sub-in">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      class="footer__box-sub-input"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="footer__box-sub-in">
+                    <i class="far fa-envelope"></i>
+                    <input
+                      type="email"
+                      class="footer__box-sub-input"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <button class="footer__box-sub-btn">Subscribe</button>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="footer__box-ins">
+                  <h2 class="footer__box-ins-heading">Our Instagram</h2>
+                  <p class="footer__box-ins-text">
+                    Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus.
+                    Phasellus null
+                  </p>
+                  <div class="row">
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-1.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-2.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-3.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-4.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-5.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-6.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-7.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-8.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-9.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                      <a href="#" class="footer__box-ins-link">
+                        <img
+                          src="./assets/img/ins-10.jpg"
+                          alt=""
+                          class="footer__box-ins-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__auth">
+            © 2022
+            <a href="#" class="footer__auth-link">Le Quang Vinh</a>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal"></div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>

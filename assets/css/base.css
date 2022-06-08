@@ -1,0 +1,49 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #212121;
+  --primary-color: #3fd0d4;
+
+  --top-bar-height: 46px;
+  --header-height: 70px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes growDown {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
